@@ -12,10 +12,10 @@ Aspect ratio is the width of the image divided by the height of the image. There
 Another observation from the dataset:
 
 
-`c10  =>  defaultdict(<class 'int'>, {(480, 640): 114, (1520, 2688): 12})`
-`c20  =>  defaultdict(<class 'int'>, {(1080, 1920): 324})`
-`c21  =>  defaultdict(<class 'int'>, {(1080, 1920): 142, (6, 10): 1, (675, 1200): 1, (619, 1100): 1})`
-`c23  =>  defaultdict(<class 'int'>, {(1080, 1920): 484})`
+- `c10  =>  defaultdict(<class 'int'>, {(480, 640): 114, (1520, 2688): 12})`
+- `c20  =>  defaultdict(<class 'int'>, {(1080, 1920): 324})`
+- `c21  =>  defaultdict(<class 'int'>, {(1080, 1920): 142, (6, 10): 1, (675, 1200): 1, (619, 1100): 1})`
+- `c23  =>  defaultdict(<class 'int'>, {(1080, 1920): 484})`
 
 `c10  =>  defaultdict(<class 'int'>, {(480, 640): 114, (1520, 2688): 12})` means that for images captured by camera with id `c10`, there are 114 images with (height, width) of (480, 640) and 12 images with (1520, 2688). As you see, there is only one image with (6, 10) dimension, we can discard it (or consider it as anomalous) when we define paremetes such as `min_contour_area` and `similrity_threshold`.
 
