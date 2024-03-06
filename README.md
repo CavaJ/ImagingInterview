@@ -1,4 +1,4 @@
-#### What did you learn after looking on our dataset?
+### What did you learn after looking on our dataset?
 
 There are 1080 images with different width, size and aspect ratio. List of unique image dimensions and aspect ratios respectively per  `camera_id` (separated by `|`):
 
