@@ -96,6 +96,9 @@ For false negatives, it can be possible to detect large light spots changes by t
 In any case, your assessment may consider the aspects which I have not considered. For example, the way I approach to e.g. false positives or false negatives may be overkill, and so on.
 
 
+In the implementation, I also provided `action=move` parameter for my `remove_duplicates_within_group` function, so that it can effectively move duplicates (or near-duplicates) to subfolders for the visual inspection.
+
+
 ### What you would suggest to implement to improve data collection of unique cases in the future?
 
 For surveillance camera images from parking garages, optimizing duplicate removal requires strategies that account for both the static nature of many elements in the images (e.g., the garage structure) and the dynamic aspects (e.g., cars moving in and out). Here are several tailored optimization strategies:
