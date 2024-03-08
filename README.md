@@ -93,6 +93,8 @@ To my mind, 37 is a reasonable number of false positives (3.4% of all images). I
 
 For false negatives, it can be possible to detect large light spots changes by the classical algorithm, by increasing `gaussian_blur_radius_list` or `min_countour_area`, however, in turn, we may lose good examples with car movement (car-in and car-out) or pedestrian movement.
 
+I applied histogram equalization which can help by adjusting the contrast and brightness distribution across the image, making it less sensitive to changes in lighting. This only helped a bit, since the lighting spots are large.
+
 In any case, your assessment may consider the aspects which I have not considered. For example, the way I approach to e.g. false positives or false negatives may be overkill, and so on.
 
 
