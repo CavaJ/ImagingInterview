@@ -63,7 +63,7 @@ For similarity threshold I also used a dynamic adaptation. I systematically test
 - For higher-resolution images (720p and up), I choose 2000.
 
 
-#### Any other comments about your solution?
+### Any other comments about your solution?
 
 I also thought about resizing all images to a certain height and width (e.g. 120x176), since smaller images can require less computational power to process. However, the effectiveness of contour area as a metric (defined in  `compare_frames_change_detection`) may be limited at such resolutions, since we might lose a lot of detail in the images to compare with.
 
@@ -96,7 +96,7 @@ For false negatives, it can be possible to detect large light spots changes by t
 In any case, your assessment may consider the aspects which I have not considered. For example, the way I approach e.g. to false positives or false negatives may be overkill, and so on.
 
 
-#### What you would suggest to implement to improve data collection of unique cases in future?
+### What you would suggest to implement to improve data collection of unique cases in future?
 
 For surveillance camera images from parking garages, optimizing duplicate removal requires strategies that account for both the static nature of many elements in the images (e.g., the garage structure) and the dynamic aspects (e.g., cars moving in and out). Here are several tailored optimization strategies:
 
